@@ -76,3 +76,42 @@ When the push button is pressed it turns on
 
 After 7 seconds  it will turn off by itself
 
+
+
+### The code
+
+
+
+
+int pinButton = 8;
+int Relay = 2;
+int stateRelay = LOW;
+int stateButton;
+int previous = LOW;
+long time = 0;
+long debounce = 100;
+
+
+int stayON = 7000; //stay on for 5000 ms
+
+void setup() {
+  pinMode(pinButton, INPUT);
+  pinMode(Relay, OUTPUT);
+}
+
+void loop() {
+  stateButton = digitalRead(pinButton);  
+  if(stateButton == HIGH && previous == LOW && millis() - time > debounce) {
+    if(stateRelay == HIGH){
+      digitalWrite(Relay, LOW);
+    } else {
+
+      
+       digitalWrite(Relay, HIGH);
+       delay(stayON);
+       digitalWrite(Relay, LOW);
+    }
+    time = millis();
+  }
+  previous == stateButton;
+}
