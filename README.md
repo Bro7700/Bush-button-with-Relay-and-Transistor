@@ -62,6 +62,10 @@ connecting LED Light Termenal 1 to power supply and Terminal 2 to Relay ,
 
 
 
+[OPEN](https://www.tinkercad.com/things/2lF6XQazBab-super-duup-elzing/editel?tenant=circuits)
+
+
+
 
 ![Super Duup-Elzing](https://user-images.githubusercontent.com/109243989/180101282-25084e5a-bfa2-4004-a548-c0b09f2df55c.png)
  
