@@ -124,14 +124,15 @@ void loop() {
     } else {
 
       
-       digitalWrite(Relay, HIGH);
+     digitalWrite(Relay, HIGH);
      
-       delay(stayON);
+     delay(stayON);
        
-       digitalWrite(Relay, LOW);
+     digitalWrite(Relay, LOW);
        
     }
     time = millis();
   }
   previous == stateButton;
+  
 }
